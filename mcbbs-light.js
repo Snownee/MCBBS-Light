@@ -20,7 +20,8 @@ background-size: cover !important
 .ad {
 display: none
 }
-#wp .wp, #hd .wp {
+#wp .wp, #hd .wp,
+.pm .flb {
 background: none !important;
 }
 .kk_xshow .kkinnerpad,
@@ -31,7 +32,8 @@ background: none !important;
 #ct.wp.ct1,
 .move-span,
 .appl,
-#threadlist {
+#threadlist,
+.pm_tac, .c {
 background: #FDFDFD !important
 }
 .portal_left_content,
@@ -226,6 +228,10 @@ margin: 0 !important;
 #nv_search .pgs {
 margin-top: 10px;
 float: right
+}
+#my16modannouncement {
+background: #e1f5fe !important;
+border-color: #ddd !important;
 }
 `;
 
