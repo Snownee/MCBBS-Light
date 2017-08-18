@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Mcbbs-Light
 // @namespace    undefined
-// @version      0.2
+// @version      0.3
 // @description  the new
 // @author       Snownee
 // @include      *mcbbs.net/*
@@ -14,6 +14,24 @@ jQuery(document).ready(function($) {
     // $("[src='template/mcbbs/image/logo_sc.png']").attr("src ", "http://i.imgur.com/8WUBLPS.png");
     // 主体背景颜色
     var css = `
+#scrolltop {
+bottom: 40px !important;
+transform: translateX(50px);
+}
+#scrolltop .scrolltopa {
+background-color: #7E57C2 !important;
+background-image: none !important;
+border-radius: 50%;
+width: 54px !important;
+padding: 0;
+box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+color: #fff;
+line-height: 54px;
+font-size: x-large;
+font-family: cursive;
+font-weight: bolder;
+transform: rotate(-89deg);
+}
 #body_fixed_bg {
 background-size: cover !important
 }
@@ -242,6 +260,7 @@ border-color: #ddd !important;
     $('.hdc h2 a').attr('href', 'http://www.mcbbs.net/forum.php');
     $('#ft').parent().css({'min-width': '1130px', 'background': 'rgba(0, 0, 0, 0.4) none repeat scroll 0 0', 'margin-top': '-40px', 'padding-top': '50px'});
     $('.pg_group #pgt').parent().css({'background': '#FDFDFD', 'box-shadow': '0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12)', 'margin': '0 3px', 'border': 'none'});
+    $('#scrolltop .scrolltopa').text('>');
 
     //修改顶部
     css += `
@@ -284,9 +303,6 @@ background: none
 }
 .mc_map_border_left {
 background: none
-}
-#scrolltop .scrolltopa {
-visibility: hidden;
 }
 `;
 
