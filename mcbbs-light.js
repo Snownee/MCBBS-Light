@@ -51,7 +51,8 @@ background: none !important;
 .move-span,
 .appl,
 #threadlist,
-.pm_tac, .c {
+.pm_tac, .c,
+.special_user_login {
 background: #FDFDFD !important
 }
 .portal_left_content,
@@ -117,7 +118,8 @@ embed,
 #nv_group .tb.cl,
 #darkroomtable,
 .sttl.mbn,
-#postform .bm.cl {
+#postform .bm.cl,
+.special_user_login {
 box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
 }
 #framea7S7Jl, #portal_block_711 {
