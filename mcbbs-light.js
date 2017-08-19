@@ -148,6 +148,7 @@ background-color: #EFF6F8 !important
 padding: 10px !important;
 }
 #portal_block_741 iframe, #portal_block_713_content iframe {
+height: 416px;
 width: 100% !important
 }
 .kkinnerpad div img {
@@ -247,7 +248,7 @@ margin: 0 !important;
 margin-top: 10px;
 float: right
 }
-#my16modannouncement {
+#my16modannouncement, #mymodannouncement {
 background: #e1f5fe !important;
 border-color: #ddd !important;
 }
