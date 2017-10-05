@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Mcbbs-Light
 // @namespace    undefined
-// @version      0.3
+// @version      0.5
 // @description  the new
 // @author       Snownee
 // @include      *mcbbs.net/*
