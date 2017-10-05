@@ -52,7 +52,9 @@ background: none !important;
 .appl,
 #threadlist,
 .pm_tac, .c,
-.special_user_login {
+.special_user_login,
+#group_f_mn .xld.xlda,
+#group_f_mn .tbmu {
 background: #FDFDFD !important
 }
 .portal_left_content,
@@ -119,7 +121,10 @@ embed,
 #darkroomtable,
 .sttl.mbn,
 #postform .bm.cl,
-.special_user_login {
+.special_user_login,
+#group_f_mn .xld.xlda,
+#group_f_mn .tbmu,
+.ttp.cl {
 box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
 }
 #framea7S7Jl, #portal_block_711 {
@@ -127,6 +132,15 @@ box-shadow: none !important
 }
 #visitedforumstmp {
 margin-left: 0
+}
+#faq_right {
+margin-left: 0;
+background: none;
+}
+#faq_right .faq_right_inp {
+background: none;
+border-bottom: 2px solid #C2D5E3;
+font-size: 16px;
 }
 .pg_index .mn {
 width: 662px !important;
@@ -152,6 +166,9 @@ padding: 10px !important;
 #portal_block_741 iframe, #portal_block_713_content iframe {
 height: 416px;
 width: 100% !important
+}
+#portal_block_713 {
+height: 450px;
 }
 .kkinnerpad div img {
 visibility: hidden;
@@ -240,7 +257,9 @@ width: 48.9% !important
 #nv_home #ct {
 background: none !important
 }
-#nv_group .tb.cl {
+#nv_group .tb.cl,
+#nv_group .ttp.cl,
+#group_f_mn>* {
 margin: 0 3px !important
 }
 #wp #portal_block_741_content {
@@ -250,9 +269,24 @@ margin: 0 !important;
 margin-top: 10px;
 float: right
 }
+.showhide, .ignore_notice {
+height: 11px !important;
+}
 #my16modannouncement, #mymodannouncement {
 background: #e1f5fe !important;
 border-color: #ddd !important;
+}
+.bbda, .tbmu, .bm_c tr td, .bm_c tr th {
+border-bottom: 1px solid #C2D5E3 !important;
+}
+.fl_row td, #nv_group .bm_c tr:first-child td, #nv_group .bm_c tr:first-child th {
+border-top: 1px solid #C2D5E3 !important;
+}
+.xlda .m {
+margin: 8px 0 8px -60px;
+}
+#group_f_mn .tbmu {
+padding: 8px 10px 8px 0;
 }
 `;
 
@@ -264,6 +298,7 @@ border-color: #ddd !important;
     $('#ft').parent().css({'min-width': '1130px', 'background': 'rgba(0, 0, 0, 0.4) none repeat scroll 0 0', 'margin-top': '-40px', 'padding-top': '50px'});
     $('.pg_group #pgt').parent().css({'background': '#FDFDFD', 'box-shadow': '0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12)', 'margin': '0 3px', 'border': 'none'});
     $('#scrolltop .scrolltopa').text('>');
+    $('#group_f_mn .tbmu:not(.cl)').css('padding', '0 20px 5px')
 
     //修改顶部
     css += `
